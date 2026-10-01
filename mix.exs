@@ -25,7 +25,8 @@ defmodule ZoneConsole.MixProject do
       {:wtransport, github: "V-Sekai-fire/multiplayer-fabric-webtransport"},
       {:propcheck, "~> 1.4", only: [:test, :dev], runtime: false},
       {:aria_storage, github: "V-Sekai-fire/aria-storage"},
-      {:keychain, github: "V-Sekai-fire/contract-keychain", ref: "5f1e50440b9518197254d7333fe318123aa7ead9"}
+      {:keychain,
+       github: "V-Sekai-fire/contract-keychain", ref: "5f1e50440b9518197254d7333fe318123aa7ead9"}
     ]
   end
 
