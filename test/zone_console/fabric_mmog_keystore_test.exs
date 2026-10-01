@@ -3,7 +3,7 @@ defmodule ZoneConsole.FabricMMOGKeyStoreTest do
   use PropCheck
 
   alias ZoneConsole.FabricMMOGKeyStore, as: KS
-  alias ZoneConsole.Keychain.Mock
+  alias Keychain.Mock
 
   setup do
     Mock.reset()

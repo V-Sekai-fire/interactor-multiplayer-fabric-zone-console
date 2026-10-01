@@ -14,7 +14,6 @@ defmodule ZoneConsole.FabricMMOGKeyStore do
     SERVICE  = "multiplayer_fabric_mmog.asset_key"
   """
 
-  alias ZoneConsole.Keychain
 
   @aes_key_bytes 16
   @aes_iv_bytes 12

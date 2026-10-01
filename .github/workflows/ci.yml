@@ -43,7 +43,7 @@ jobs:
           path: |
             ~/.cargo/registry
             ~/.cargo/git
-          key: ${{ runner.os }}-zone-console-cargo-${{ hashFiles('native/keychain_nif/Cargo.toml') }}
+          key: ${{ runner.os }}-zone-console-cargo-${{ hashFiles('mix.lock') }}
           restore-keys: ${{ runner.os }}-zone-console-cargo-
 
       - name: Install dependencies
@@ -56,7 +56,7 @@ jobs:
         run: mix format --check-formatted
 
       - name: Run tests
-        # Tests use ZoneConsole.Keychain.Mock (ETS) — no OS keychain needed.
+        # Tests use Keychain.Mock (ETS) — no OS keychain needed.
         # PropCheck runs 100 cases per property by default.
         # :prod tests require live URO_BASE_URL / ZONE_SERVER_URL — excluded in CI.
         run: mix test --exclude prod --trace

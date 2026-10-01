@@ -1,7 +1,7 @@
 defmodule ZoneConsole.CLI do
   @moduledoc "Escript entry point — authenticate against Uro then launch the TUI."
 
-  alias ZoneConsole.{Keychain, UroClient}
+  alias ZoneConsole.UroClient
 
   @kc_package "org.v-sekai.godot"
   @kc_service "zone_console"
